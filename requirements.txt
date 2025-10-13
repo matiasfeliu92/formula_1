@@ -2,3 +2,6 @@ pandas
 requests
 fastf1
 openpyxl
+pandas
+sqlalchemy
+pyodbc
