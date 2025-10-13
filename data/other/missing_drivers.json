@@ -1,0 +1,135 @@
+{
+  "BORTOLETO": {
+    "team_name": "Trident",
+    "team_colour": "Azul/rojo",
+    "first_name": "Gabriel",
+    "last_name": "Bortoleto",
+    "country_code": "BR"
+  },
+  "GOETHE": {
+    "team_name": "Trident",
+    "team_colour": "Azul/rojo",
+    "first_name": "Oliver",
+    "last_name": "Goethe",
+    "country_code": "DE"
+  },
+  "FREDERICK": {
+    "team_name": "ART Grand Prix",
+    "team_colour": "Blanco/rojo",
+    "first_name": "Kaylen",
+    "last_name": "Frederick",
+    "country_code": "US"
+  },
+  "SAUCY": {
+    "team_name": "ART Grand Prix",
+    "team_colour": "Blanco/rojo",
+    "first_name": "Grégoire",
+    "last_name": "Saucy",
+    "country_code": "CH"
+  },
+  "TSOLOV": {
+    "team_name": "ART Grand Prix",
+    "team_colour": "Blanco/rojo",
+    "first_name": "Nikola",
+    "last_name": "Tsolov",
+    "country_code": "BG"
+  },
+  "EDGAR": {
+    "team_name": "MP Motorsport",
+    "team_colour": "Naranja",
+    "first_name": "Jonny",
+    "last_name": "Edgar",
+    "country_code": "GB"
+  },
+  "MINI": {
+    "team_name": "Hitech Pulse-Eight",
+    "team_colour": "Gris/negro",
+    "first_name": "Gabriele",
+    "last_name": "Minì",
+    "country_code": "IT"
+  },
+  "COLLET": {
+    "team_name": "Van Amersfoort Racing",
+    "team_colour": "Negro/naranja",
+    "first_name": "Caio",
+    "last_name": "Collet",
+    "country_code": "BR"
+  },
+  "SMITH": {
+    "team_name": "Van Amersfoort Racing",
+    "team_colour": "Negro/naranja",
+    "first_name": "Tommy",
+    "last_name": "Smith",
+    "country_code": "AU"
+  },
+  "ESTERSON": {
+    "team_name": "Rodin Carlin",
+    "team_colour": "Azul",
+    "first_name": "Callum",
+    "last_name": "Voisin",
+    "country_code": "GB"
+  },
+  "BARTER": {
+    "team_name": "Campos Racing",
+    "team_colour": "Amarillo",
+    "first_name": "Hugh",
+    "last_name": "Barter",
+    "country_code": "AU"
+  },
+  "BEDRIN": {
+    "team_name": "Jenzer Motorsport",
+    "team_colour": "Celeste",
+    "first_name": "Nikita",
+    "last_name": "Bedrin",
+    "country_code": "RU"
+  },
+  "GARCIA": {
+    "team_name": "Jenzer Motorsport",
+    "team_colour": "Celeste",
+    "first_name": "Alejandro",
+    "last_name": "García",
+    "country_code": "MX"
+  },
+  "FLOERSCH": {
+    "team_name": "PHM Racing by Charouz",
+    "team_colour": "Blanco/verde",
+    "first_name": "Sophia",
+    "last_name": "Floersch",
+    "country_code": "DE"
+  },
+  "FARIA": {
+    "team_name": "PHM Racing by Charouz",
+    "team_colour": "Blanco/verde",
+    "first_name": "Roberto",
+    "last_name": "Faria",
+    "country_code": "BR"
+  },
+  "ANTONELLI": {
+    "team_name": "Mercedes",
+    "team_colour": "Plateado/negro",
+    "first_name": "Andrea Kimi",
+    "last_name": "Antonelli",
+    "country_code": "IT"
+  },
+  "LINDBLAD": {
+    "team_name": "Campos Racing",
+    "team_colour": "Rojo/blanco",
+    "first_name": "Arvid",
+    "last_name": "Lindblad",
+    "country_code": "GB"
+  },
+  "MARTINS": {
+    "team_name": "ART Grand Prix",
+    "team_colour": "Blanco/rojo",
+    "first_name": "Victor",
+    "last_name": "Martins",
+    "country_code": "FR"
+  },
+  "DUNNE": {
+    "team_name": "Rodin Motorsport",
+    "team_colour": "Negro/dorado",
+    "first_name": "Alexander",
+    "last_name": "Dunne",
+    "country_code": "IE"
+  }
+}
