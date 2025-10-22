@@ -5,7 +5,7 @@ import pandas as pd
 import time
 import fastf1
 
-from scripts import Extract, Transform, Load
+from scripts import Extract
 
 years = [elem for elem in sys.argv[1:] if elem.isdigit()]
 
@@ -50,14 +50,3 @@ if __name__ == "__main__":
         print(formula_1_data)
 
         extract.save_raw_data(formula_1_data)
-
-    print("-------------------------------------------------------------------------------TRANSFORMING DATA-------------------------------------------------------------------------------")
-    # transform = Transform()
-    transform = Transform()
-    unified_data = transform.unify_data()
-    transformed_data = transform.transform_data(unified_data)
-    load = Load()
-    print("")
-    print("")
-    formula_1_model = load.model_data(transformed_data)
-    load.load_data(formula_1_model)
