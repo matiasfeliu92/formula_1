@@ -154,9 +154,6 @@ FROM datos_unicos
 GROUP BY driver_number;
 
 
-SELECT * FROM DimDrivers
-SELECT * FROM FactLaps
-
 --ANALIZAR CUANTAS CARRERAS CORRIO CADA PILOTO
 
 --SELECT 
@@ -168,3 +165,73 @@ SELECT * FROM FactLaps
 --JOIN DimMeetings m ON fc.meeting_key = m.meeting_key
 --GROUP BY d.full_name, d.team_name
 --ORDER BY COUNT(m.meeting_key) DESC
+
+SELECT * FROM [Staging].[laps_by_drivers_sessions_meetings]
+SELECT * FROM [Staging].[cars_by_drivers_sessions_meetings]
+
+
+
+
+SELECT 
+	duration_sector_1,
+	duration_sector_2,
+	duration_sector_3,
+	lap_duration
+FROM 
+	[Staging].[laps_by_drivers_sessions_meetings]
+WHERE
+	TRY_CAST(lap_duration AS DECIMAL(8,2)) > 700
+
+
+
+
+DECLARE @table NVARCHAR(128) = 'laps_by_drivers_sessions_meetings'
+DECLARE @schema NVARCHAR(128) = 'Staging'
+DECLARE @sql NVARCHAR(MAX) = ''
+
+-- Construir el bloque dinámico con UNION ALL
+SELECT @sql += 
+    'SELECT ''' + 
+		COLUMN_NAME + ''' AS columna,  
+		COUNT([' + COLUMN_NAME + ']) AS conteo__total_valores, 
+		COUNT(*) - COUNT([' + COLUMN_NAME + ']) AS conteo_total_nulos,
+		MAX([' + COLUMN_NAME + ']) AS valor_maximo,
+		MIN([' + COLUMN_NAME + ']) AS valor_minimo
+	FROM [' + @schema + '].[' + @table + ']
+    UNION ALL
+    '
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = @table
+  AND TABLE_SCHEMA = @schema
+  AND (COLUMN_NAME LIKE '%duration%' OR COLUMN_NAME LIKE '%speed%');
+
+-- Eliminar el último UNION ALL
+IF LEN(@sql) >= 11
+    SET @sql = LEFT(@sql, LEN(@sql) - 11)
+
+-- Ejecutar el bloque
+EXEC sp_executesql @sql
+
+
+SELECT
+	MAX(lap_duration) AS max_lap_duration
+FROM
+	[Staging].[laps_by_drivers_sessions_meetings]
+
+SELECT
+    'lap_duration' AS column_,
+    COUNT(*) AS conteo_valores_totales,
+    COUNT(*) - COUNT([lap_duration]) AS conteo_total_nulos,
+    MAX(CAST([lap_duration] AS FLOAT)) AS valor_maximo,
+    MIN(CAST([lap_duration] AS FLOAT)) AS valor_minimo,
+    AVG(CAST([lap_duration] AS FLOAT)) AS promedio
+FROM [Staging].[laps_by_drivers_sessions_meetings]
+UNION ALL
+SELECT
+    'duration_sector_1' AS column_,
+    COUNT(*) AS conteo_valores_totales,
+    COUNT(*) - COUNT(duration_sector_1) AS conteo_total_nulos,
+    MAX(CAST(duration_sector_1 AS FLOAT)) AS valor_maximo,
+    MIN(CAST(duration_sector_1 AS FLOAT)) AS valor_minimo,
+    AVG(CAST(duration_sector_1 AS FLOAT)) AS promedio
+FROM [Staging].[laps_by_drivers_sessions_meetings]

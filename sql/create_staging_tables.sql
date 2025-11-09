@@ -1,3 +1,40 @@
+-- Eliminar FK de FactCars
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_FactCars_Sessions')
+    ALTER TABLE Transformed.FactCars DROP CONSTRAINT FK_FactCars_Sessions;
+
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_FactCars_Drivers')
+    ALTER TABLE Transformed.FactCars DROP CONSTRAINT FK_FactCars_Drivers;
+
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_FactCars_Meetings')
+    ALTER TABLE Transformed.FactCars DROP CONSTRAINT FK_FactCars_Meetings;
+
+
+-- Eliminar FK de FactLaps
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_FactLaps_Sessions')
+    ALTER TABLE Transformed.FactLaps DROP CONSTRAINT FK_FactLaps_Sessions;
+
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_FactLaps_Drivers')
+    ALTER TABLE Transformed.FactLaps DROP CONSTRAINT FK_FactLaps_Drivers;
+
+
+-- Eliminar FK de DimSessions
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimSessions_Meetings')
+    ALTER TABLE Transformed.DimSessions DROP CONSTRAINT FK_DimSessions_Meetings;
+
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimSessions_Circuits')
+    ALTER TABLE Transformed.DimSessions DROP CONSTRAINT FK_DimSessions_Circuits;
+
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimSessions_Countries')
+    ALTER TABLE Transformed.DimSessions DROP CONSTRAINT FK_DimSessions_Countries;
+
+
+-- Eliminar FK de DimMeetings
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimMeetings_Circuits')
+    ALTER TABLE Transformed.DimMeetings DROP CONSTRAINT FK_DimMeetings_Circuits;
+
+IF EXISTS (SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimMeetings_Countries')
+    ALTER TABLE Transformed.DimMeetings DROP CONSTRAINT FK_DimMeetings_Countries;
+
 --CREACION DE SCHEMA PARA ALMACENAR TABLAS CON DATA SIN PROCESAR
 IF NOT EXISTS (
     SELECT 1
@@ -141,4 +178,87 @@ BEGIN
 		speed NVARCHAR(MAX),
 		rpm NVARCHAR(MAX)
     );
+END
+
+
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_Cars_Sessions'
+)
+BEGIN
+    ALTER TABLE [Staging].[Cars]
+    ADD CONSTRAINT FK_Cars_Sessions FOREIGN KEY (session_key) REFERENCES [Staging].[Sessions](session_key);
+END
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_FactCars_Drivers'
+)
+BEGIN
+    ALTER TABLE Transformed.FactCars
+    ADD CONSTRAINT FK_FactCars_Drivers FOREIGN KEY (driver_number) REFERENCES Transformed.DimDrivers(driver_number);
+END
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_FactCars_Meetings'
+)
+BEGIN
+    ALTER TABLE Transformed.FactCars
+    ADD CONSTRAINT FK_FactCars_Meetings FOREIGN KEY (meeting_key) REFERENCES Transformed.DimMeetings(meeting_key);
+END
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_FactLaps_Sessions'
+)
+BEGIN
+    ALTER TABLE Transformed.FactLaps
+    ADD CONSTRAINT FK_FactLaps_Sessions FOREIGN KEY (session_key) REFERENCES Transformed.DimSessions(session_key);
+END
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_FactLaps_Drivers'
+)
+BEGIN
+    ALTER TABLE Transformed.FactLaps
+    ADD CONSTRAINT FK_FactLaps_Drivers FOREIGN KEY (driver_number) REFERENCES Transformed.DimDrivers(driver_number);
+END
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimSessions_Meetings'
+)
+BEGIN
+    ALTER TABLE Transformed.DimSessions
+    ADD CONSTRAINT FK_DimSessions_Meetings FOREIGN KEY (meeting_key) REFERENCES Transformed.DimMeetings(meeting_key);
+END
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimSessions_Circuits'
+)
+BEGIN
+    ALTER TABLE Transformed.DimSessions
+    ADD CONSTRAINT FK_DimSessions_Circuits FOREIGN KEY (circuit_key) REFERENCES Transformed.DimCircuits(circuit_key);
+END
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimSessions_Countries'
+)
+BEGIN
+    ALTER TABLE Transformed.DimSessions
+    ADD CONSTRAINT FK_DimSessions_Countries FOREIGN KEY (country_key) REFERENCES Transformed.DimCountries(country_key);
+END
+
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimMeetings_Circuits'
+)
+BEGIN
+    ALTER TABLE Transformed.DimMeetings
+    ADD CONSTRAINT FK_DimMeetings_Circuits FOREIGN KEY (circuit_key) REFERENCES Transformed.DimCircuits(circuit_key);
+END
+
+IF NOT EXISTS (
+    SELECT 1 FROM sys.foreign_keys WHERE name = 'FK_DimMeetings_Countries'
+)
+BEGIN
+    ALTER TABLE Transformed.DimMeetings
+    ADD CONSTRAINT FK_DimMeetings_Countries FOREIGN KEY (country_key) REFERENCES Transformed.DimCountries(country_key);
 END
