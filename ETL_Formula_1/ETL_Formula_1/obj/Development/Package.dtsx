@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="81"
-  DTS:VersionGUID="{E8C6196D-1689-471C-B263-08113A68D788}">
+  DTS:VersionBuild="84"
+  DTS:VersionGUID="{76E587D2-E735-4D3A-B5B1-8D31B0881F01}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -310,291 +310,259 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="meeting_name"
-              DTS:DTSID="{BDE6B3EB-27EE-4AF0-8F6C-ACF62A6CECAD}"
+              DTS:DTSID="{2AB553B3-ADE3-4005-8445-0659E3CFAC65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="meeting_official_name"
-              DTS:DTSID="{263CF32B-BD14-4528-8766-B7F6A16AC7C9}"
+              DTS:DTSID="{F8752BDE-1649-43CC-BD65-E2A976D05D3C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="meeting_code"
-              DTS:DTSID="{BDF7D87C-214A-4D48-88F7-7D0B406AD02D}"
+              DTS:DTSID="{A21DE64C-75E2-47CE-A31E-BE8FB1F995FA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="session_name"
-              DTS:DTSID="{21720A8C-B359-4A89-B9DD-3597602A4202}"
+              DTS:DTSID="{36D39888-6D10-456A-A66D-0FAF904A3C6B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="session_type"
-              DTS:DTSID="{B1BE0C14-3E1E-4D0C-A2AC-651E5105384C}"
+              DTS:DTSID="{11DFC618-BD8F-4F50-99B2-C66DC98BF263}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="circuit_short_name"
-              DTS:DTSID="{4768AB71-E3C8-4BA6-BDFF-1D8CD9E567E3}"
+              DTS:DTSID="{2BB15D2A-94C6-448C-B9AE-AA207D97BB79}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="meeting_country_code"
-              DTS:DTSID="{06BEF820-FEFA-447F-A769-4C95B0F59E5E}"
+              DTS:DTSID="{F9667262-1EEF-4E06-AF0A-326604254E2B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="country_name"
-              DTS:DTSID="{4FAB9467-8762-4E61-9558-54BBD93F90F4}"
+              DTS:DTSID="{0419DFF3-BCB5-44EC-A97A-69FC7DD30F2E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="location"
-              DTS:DTSID="{DE43845A-3CAB-4ED8-9147-5E7F14C57356}"
+              DTS:DTSID="{419CA0D3-D320-4402-83BF-ACDA766ECEE4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="meeting_date_start"
-              DTS:DTSID="{550858C6-5AE4-4AAD-9578-F1CDABD4326E}"
+              DTS:DTSID="{57531B87-EEBB-4BE5-A487-1521A86CA3D7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="session_date_start"
-              DTS:DTSID="{5A778F75-4323-45F4-BD70-3479BEFDE30A}"
+              DTS:DTSID="{9B4D0511-6F04-425B-9347-00027DF509DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="session_date_end"
-              DTS:DTSID="{6169DC91-1991-47FD-BC7A-368A5536205C}"
+              DTS:DTSID="{21075CF5-6B66-4CE5-80E8-701346913F0E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="gmt_offset"
-              DTS:DTSID="{50AD2170-FCBB-49A6-858E-6BD63D023495}"
+              DTS:DTSID="{71C30B95-D4E4-4418-9D8D-0A894013C708}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="first_name"
-              DTS:DTSID="{E86C355E-B692-4EFA-967A-CF52E03DEE16}"
+              DTS:DTSID="{353EC574-12EF-4BFD-A30D-299346375C01}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="last_name"
-              DTS:DTSID="{574950E0-A358-4CDE-93CB-03A57C664A82}"
+              DTS:DTSID="{496A8E4B-5F76-44F4-BBE5-8E821B827531}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="full_name"
-              DTS:DTSID="{04FBCB95-9ED4-476C-A46B-19B01CB588C4}"
+              DTS:DTSID="{87625AF7-29E3-4348-87A8-1B67E46E7C8A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="broadcast_name"
-              DTS:DTSID="{FC232A70-4BE7-4C55-BF7B-FC13139B59D3}"
+              DTS:DTSID="{1A1815FC-545E-4966-949C-AFE854F29A28}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="driver_country_code"
-              DTS:DTSID="{40868E0A-D5A8-467C-8366-FEC775D6E92B}"
+              DTS:DTSID="{85481106-A08C-4DC9-BDAF-CFFDD2918A88}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="team_name"
-              DTS:DTSID="{8659C548-FF11-4E56-8EFB-53A35CCA3BAE}"
+              DTS:DTSID="{04CB22B9-855E-41B8-A366-0D02673E465B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="lap_number"
-              DTS:DTSID="{2B03D140-022F-4895-9BBD-06DC0FAC9F25}"
+              DTS:DTSID="{5AB96B13-BFFB-43D2-AA41-257A6EC5C512}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="lap_date_start"
-              DTS:DTSID="{B49224DB-4AC0-40BC-8BC6-BA8A475BDE2D}"
+              DTS:DTSID="{86BB6F47-3075-45B9-8747-26631588E80A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="duration_sector_1"
-              DTS:DTSID="{228EF189-9D34-466E-9FFE-0844657496D7}"
+              DTS:DTSID="{80AA57E9-F55B-4630-9073-41AD2798D4AB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="duration_sector_2"
-              DTS:DTSID="{1993EAF4-359E-42B0-ADE1-12C1158F40F4}"
+              DTS:DTSID="{00678C11-21C3-41C9-A23E-1A2E7DDD257C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="duration_sector_3"
-              DTS:DTSID="{A47CDE78-DB81-4D16-A65C-57C5AFB1BD65}"
+              DTS:DTSID="{FCFEEE19-9B6D-4C8F-B869-EA349DAA1D1F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="i1_speed"
-              DTS:DTSID="{D0F3916A-942D-45A1-8026-97B455A22A01}"
+              DTS:DTSID="{F9D7A7D1-9144-4DF4-906D-05CA4BD8207A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="i2_speed"
-              DTS:DTSID="{7DD338E4-A743-47D1-A124-31D14ACCF77D}"
+              DTS:DTSID="{FA520898-7999-4DB6-B669-29B7A4BFD4D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="is_pit_out_lap"
-              DTS:DTSID="{03DA9077-A45B-4C45-AFC9-D24AD9C32AAB}"
+              DTS:DTSID="{0885D816-FF11-4D2C-B699-0FD5264BF98F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="lap_duration"
-              DTS:DTSID="{46765A2E-FD16-4D06-94A5-22FDB1842B17}"
+              DTS:DTSID="{80521107-3EC5-4C2E-A62B-F40A89384616}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="segments_sector_1"
-              DTS:DTSID="{5F7E1910-798C-4B79-8569-E2F097543932}"
+              DTS:DTSID="{7C805121-E0C1-4B18-AE2C-9A45B112CF83}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="segments_sector_2"
-              DTS:DTSID="{F2C364AC-C2EC-45BB-9A19-00186A527BC1}"
+              DTS:DTSID="{6856DB70-C80D-4E53-AB21-6585F4809DD5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="segments_sector_3"
-              DTS:DTSID="{8CA6F17B-9386-40D7-9F85-0922838AF0E4}"
+              DTS:DTSID="{AD227B79-7030-40DE-A31F-0F3D7788255D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="st_speed"
-              DTS:DTSID="{7508ED05-B7B7-4F7C-B175-A4B05ED5D861}"
+              DTS:DTSID="{1B2E5A7C-EA9B-4BB3-BAA4-8293C1767A83}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1481,53 +1449,43 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[date]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="date" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[session_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="session_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[brake]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="brake" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[n_gear]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="n_gear" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[driver_number]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="driver_number" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[drs]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="drs" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[throttle]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="throttle" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[speed]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="speed" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[rpm]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="rpm" />
                   </externalMetadataColumns>
                 </input>
@@ -1718,63 +1676,51 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[session_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="session_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[driver_number]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="driver_number" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[broadcast_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="broadcast_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[full_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="full_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[name_acronym]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="name_acronym" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[team_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="team_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[team_colour]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="team_colour" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[first_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="first_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[last_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="last_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[headshot_url]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="headshot_url" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_code]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="country_code" />
                   </externalMetadataColumns>
                 </input>
@@ -4008,83 +3954,67 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[session_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="session_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[driver_number]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="driver_number" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[lap_number]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="lap_number" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[date_start]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="date_start" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[duration_sector_1]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="duration_sector_1" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[duration_sector_2]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="duration_sector_2" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[duration_sector_3]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="duration_sector_3" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[i1_speed]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="i1_speed" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[i2_speed]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="i2_speed" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[is_pit_out_lap]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="is_pit_out_lap" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[lap_duration]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="lap_duration" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[segments_sector_1]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="segments_sector_1" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[segments_sector_2]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="segments_sector_2" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[segments_sector_3]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="segments_sector_3" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[st_speed]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="st_speed" />
                   </externalMetadataColumns>
                 </input>
@@ -4282,68 +4212,55 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[circuit_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="circuit_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[circuit_short_name]"
-                      dataType="wstr"
-                      length="250"
+                      dataType="nText"
                       name="circuit_short_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_code]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_code" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[location]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="location" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="country_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_code]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="country_code" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="country_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_name]"
-                      dataType="wstr"
-                      length="250"
+                      dataType="nText"
                       name="meeting_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_official_name]"
-                      dataType="wstr"
-                      length="250"
+                      dataType="nText"
                       name="meeting_official_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[gmt_offset]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="gmt_offset" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[date_start]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="date_start" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[year]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="year" />
                   </externalMetadataColumns>
                 </input>
@@ -4661,1116 +4578,6 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Tarea Flujo de datos"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Tarea Flujo de datos"
-      DTS:DTSID="{67C8D5A6-23A5-4A75-9283-50A7E7ABEC8A}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Tarea Flujo de datos"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Tarea Flujo de datos\Destino de archivo plano"
-              componentClassID="Microsoft.FlatFileDestination"
-              contactInfo="Destino de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
-              description="Destino de archivo plano"
-              localeId="3082"
-              name="Destino de archivo plano"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Especifica si los datos sobrescriben el archivo de destino o se anexan al mismo."
-                  name="Overwrite">true</property>
-                <property
-                  dataType="System.Null"
-                  description="Especifica el texto para escribir en el archivo de destino antes de escribir ningún dato."
-                  expressionType="Notify"
-                  name="Header" />
-                <property
-                  dataType="System.Boolean"
-                  description="Cuando el calificador de texto está habilitado, especifica si este contendrá secuencias de escape o no en los datos escritos en el archivo de destino."
-                  name="EscapeQualifier">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Tarea Flujo de datos\Destino de archivo plano.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[GUARDAR CSV laps_by_drivers_sessions_meetings]"
-                  connectionManagerRefId="Package.ConnectionManagers[GUARDAR CSV laps_by_drivers_sessions_meetings]"
-                  name="FlatFileConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano]"
-                  hasSideEffects="true"
-                  name="Entrada de destino de archivo plano">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[meeting_official_name]"
-                      cachedDataType="nText"
-                      cachedName="meeting_official_name"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[meeting_official_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_official_name]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[meeting_code]"
-                      cachedDataType="nText"
-                      cachedName="meeting_code"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[meeting_code]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_code]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[session_name]"
-                      cachedDataType="nText"
-                      cachedName="session_name"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[session_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_name]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[session_type]"
-                      cachedDataType="nText"
-                      cachedName="session_type"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[session_type]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_type]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[circuit_short_name]"
-                      cachedDataType="nText"
-                      cachedName="circuit_short_name"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[circuit_short_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[circuit_short_name]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[meeting_country_code]"
-                      cachedDataType="nText"
-                      cachedName="meeting_country_code"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[meeting_country_code]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_country_code]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[country_name]"
-                      cachedDataType="nText"
-                      cachedName="country_name"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[country_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[country_name]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[location]"
-                      cachedDataType="nText"
-                      cachedName="location"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[location]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[location]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[meeting_date_start]"
-                      cachedDataType="nText"
-                      cachedName="meeting_date_start"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[meeting_date_start]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_date_start]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[session_date_start]"
-                      cachedDataType="nText"
-                      cachedName="session_date_start"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[session_date_start]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_date_start]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[session_date_end]"
-                      cachedDataType="nText"
-                      cachedName="session_date_end"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[session_date_end]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_date_end]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[gmt_offset]"
-                      cachedDataType="nText"
-                      cachedName="gmt_offset"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[gmt_offset]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[gmt_offset]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[first_name]"
-                      cachedDataType="nText"
-                      cachedName="first_name"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[first_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[first_name]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[last_name]"
-                      cachedDataType="nText"
-                      cachedName="last_name"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[last_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[last_name]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[full_name]"
-                      cachedDataType="nText"
-                      cachedName="full_name"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[full_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[full_name]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[broadcast_name]"
-                      cachedDataType="nText"
-                      cachedName="broadcast_name"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[broadcast_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[broadcast_name]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[driver_country_code]"
-                      cachedDataType="nText"
-                      cachedName="driver_country_code"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[driver_country_code]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[driver_country_code]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[team_name]"
-                      cachedDataType="nText"
-                      cachedName="team_name"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[team_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[team_name]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[lap_number]"
-                      cachedDataType="nText"
-                      cachedName="lap_number"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[lap_number]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[lap_number]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[lap_date_start]"
-                      cachedDataType="nText"
-                      cachedName="lap_date_start"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[lap_date_start]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[lap_date_start]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[duration_sector_1]"
-                      cachedDataType="nText"
-                      cachedName="duration_sector_1"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[duration_sector_1]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[duration_sector_1]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[duration_sector_2]"
-                      cachedDataType="nText"
-                      cachedName="duration_sector_2"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[duration_sector_2]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[duration_sector_2]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[duration_sector_3]"
-                      cachedDataType="nText"
-                      cachedName="duration_sector_3"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[duration_sector_3]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[duration_sector_3]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[i1_speed]"
-                      cachedDataType="nText"
-                      cachedName="i1_speed"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[i1_speed]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[i1_speed]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[i2_speed]"
-                      cachedDataType="nText"
-                      cachedName="i2_speed"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[i2_speed]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[i2_speed]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[is_pit_out_lap]"
-                      cachedDataType="nText"
-                      cachedName="is_pit_out_lap"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[is_pit_out_lap]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[is_pit_out_lap]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[lap_duration]"
-                      cachedDataType="nText"
-                      cachedName="lap_duration"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[lap_duration]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[lap_duration]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[segments_sector_1]"
-                      cachedDataType="nText"
-                      cachedName="segments_sector_1"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[segments_sector_1]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[segments_sector_1]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[segments_sector_2]"
-                      cachedDataType="nText"
-                      cachedName="segments_sector_2"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[segments_sector_2]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[segments_sector_2]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[segments_sector_3]"
-                      cachedDataType="nText"
-                      cachedName="segments_sector_3"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[segments_sector_3]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[segments_sector_3]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[st_speed]"
-                      cachedDataType="nText"
-                      cachedName="st_speed"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[st_speed]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[st_speed]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[meeting_official_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="meeting_official_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[meeting_code]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="meeting_code" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[session_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="session_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[session_type]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="session_type" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[circuit_short_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="circuit_short_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[meeting_country_code]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="meeting_country_code" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[country_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="country_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[location]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="location" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[meeting_date_start]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="meeting_date_start" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[session_date_start]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="session_date_start" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[session_date_end]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="session_date_end" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[gmt_offset]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="gmt_offset" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[first_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="first_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[last_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="last_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[full_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="full_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[broadcast_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="broadcast_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[driver_country_code]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="driver_country_code" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[team_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="team_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[lap_number]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="lap_number" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[lap_date_start]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="lap_date_start" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[duration_sector_1]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="duration_sector_1" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[duration_sector_2]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="duration_sector_2" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[duration_sector_3]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="duration_sector_3" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[i1_speed]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="i1_speed" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[i2_speed]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="i2_speed" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[is_pit_out_lap]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="is_pit_out_lap" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[lap_duration]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="lap_duration" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[segments_sector_1]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="segments_sector_1" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[segments_sector_2]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="segments_sector_2" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[segments_sector_3]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="segments_sector_3" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[st_speed]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="st_speed" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[meeting_name]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="meeting_name" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-            </component>
-            <component
-              refId="Package\Tarea Flujo de datos\Origen de OLE DB"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
-              description="Origen de OLE DB"
-              name="Origen de OLE DB"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                  name="OpenRowset">[Staging].[laps_by_drivers_sessions_meetings]</property>
-                <property
-                  dataType="System.String"
-                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="Comando SQL para ejecutar."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.String"
-                  description="Variable que contiene el comando SQL para ejecutar."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="Asignaciones entre los parámetros del comando SQL y las variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Tarea Flujo de datos\Origen de OLE DB.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GOCIPJK.Formula1]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GOCIPJK.Formula1]"
-                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
-                  name="Salida de origen de OLE DB">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_name]"
-                      name="meeting_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_official_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_official_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_official_name]"
-                      name="meeting_official_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_code]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_code]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_code]"
-                      name="meeting_code"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[session_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_name]"
-                      name="session_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_type]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[session_type]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_type]"
-                      name="session_type"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[circuit_short_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[circuit_short_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[circuit_short_name]"
-                      name="circuit_short_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_country_code]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_country_code]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_country_code]"
-                      name="meeting_country_code"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[country_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[country_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[country_name]"
-                      name="country_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[location]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[location]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[location]"
-                      name="location"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_date_start]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_date_start]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[meeting_date_start]"
-                      name="meeting_date_start"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_date_start]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[session_date_start]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_date_start]"
-                      name="session_date_start"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_date_end]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[session_date_end]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[session_date_end]"
-                      name="session_date_end"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[gmt_offset]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[gmt_offset]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[gmt_offset]"
-                      name="gmt_offset"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[first_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[first_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[first_name]"
-                      name="first_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[last_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[last_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[last_name]"
-                      name="last_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[full_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[full_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[full_name]"
-                      name="full_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[broadcast_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[broadcast_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[broadcast_name]"
-                      name="broadcast_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[driver_country_code]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[driver_country_code]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[driver_country_code]"
-                      name="driver_country_code"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[team_name]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[team_name]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[team_name]"
-                      name="team_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[lap_number]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[lap_number]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[lap_number]"
-                      name="lap_number"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[lap_date_start]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[lap_date_start]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[lap_date_start]"
-                      name="lap_date_start"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[duration_sector_1]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[duration_sector_1]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[duration_sector_1]"
-                      name="duration_sector_1"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[duration_sector_2]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[duration_sector_2]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[duration_sector_2]"
-                      name="duration_sector_2"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[duration_sector_3]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[duration_sector_3]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[duration_sector_3]"
-                      name="duration_sector_3"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[i1_speed]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[i1_speed]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[i1_speed]"
-                      name="i1_speed"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[i2_speed]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[i2_speed]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[i2_speed]"
-                      name="i2_speed"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[is_pit_out_lap]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[is_pit_out_lap]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[is_pit_out_lap]"
-                      name="is_pit_out_lap"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[lap_duration]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[lap_duration]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[lap_duration]"
-                      name="lap_duration"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[segments_sector_1]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[segments_sector_1]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[segments_sector_1]"
-                      name="segments_sector_1"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[segments_sector_2]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[segments_sector_2]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[segments_sector_2]"
-                      name="segments_sector_2"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[segments_sector_3]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[segments_sector_3]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[segments_sector_3]"
-                      name="segments_sector_3"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[st_speed]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[st_speed]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[st_speed]"
-                      name="st_speed"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_name]"
-                      dataType="nText"
-                      name="meeting_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_official_name]"
-                      dataType="nText"
-                      name="meeting_official_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_code]"
-                      dataType="nText"
-                      name="meeting_code" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[session_name]"
-                      dataType="nText"
-                      name="session_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[session_type]"
-                      dataType="nText"
-                      name="session_type" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[circuit_short_name]"
-                      dataType="nText"
-                      name="circuit_short_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_country_code]"
-                      dataType="nText"
-                      name="meeting_country_code" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[country_name]"
-                      dataType="nText"
-                      name="country_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[location]"
-                      dataType="nText"
-                      name="location" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[meeting_date_start]"
-                      dataType="nText"
-                      name="meeting_date_start" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[session_date_start]"
-                      dataType="nText"
-                      name="session_date_start" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[session_date_end]"
-                      dataType="nText"
-                      name="session_date_end" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[gmt_offset]"
-                      dataType="nText"
-                      name="gmt_offset" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[first_name]"
-                      dataType="nText"
-                      name="first_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[last_name]"
-                      dataType="nText"
-                      name="last_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[full_name]"
-                      dataType="nText"
-                      name="full_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[broadcast_name]"
-                      dataType="nText"
-                      name="broadcast_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[driver_country_code]"
-                      dataType="nText"
-                      name="driver_country_code" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[team_name]"
-                      dataType="nText"
-                      name="team_name" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[lap_number]"
-                      dataType="nText"
-                      name="lap_number" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[lap_date_start]"
-                      dataType="nText"
-                      name="lap_date_start" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[duration_sector_1]"
-                      dataType="nText"
-                      name="duration_sector_1" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[duration_sector_2]"
-                      dataType="nText"
-                      name="duration_sector_2" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[duration_sector_3]"
-                      dataType="nText"
-                      name="duration_sector_3" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[i1_speed]"
-                      dataType="nText"
-                      name="i1_speed" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[i2_speed]"
-                      dataType="nText"
-                      name="i2_speed" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[is_pit_out_lap]"
-                      dataType="nText"
-                      name="is_pit_out_lap" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[lap_duration]"
-                      dataType="nText"
-                      name="lap_duration" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[segments_sector_1]"
-                      dataType="nText"
-                      name="segments_sector_1" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[segments_sector_2]"
-                      dataType="nText"
-                      name="segments_sector_2" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[segments_sector_3]"
-                      dataType="nText"
-                      name="segments_sector_3" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[st_speed]"
-                      dataType="nText"
-                      name="st_speed" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
-                  isErrorOut="true"
-                  name="Salida de error de origen de OLE DB">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_name]"
-                      name="meeting_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_official_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_official_name]"
-                      name="meeting_official_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_code]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_code]"
-                      name="meeting_code" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[session_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[session_name]"
-                      name="session_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[session_type]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[session_type]"
-                      name="session_type" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[circuit_short_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[circuit_short_name]"
-                      name="circuit_short_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_country_code]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_country_code]"
-                      name="meeting_country_code" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[country_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[country_name]"
-                      name="country_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[location]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[location]"
-                      name="location" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_date_start]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[meeting_date_start]"
-                      name="meeting_date_start" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[session_date_start]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[session_date_start]"
-                      name="session_date_start" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[session_date_end]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[session_date_end]"
-                      name="session_date_end" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[gmt_offset]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[gmt_offset]"
-                      name="gmt_offset" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[first_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[first_name]"
-                      name="first_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[last_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[last_name]"
-                      name="last_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[full_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[full_name]"
-                      name="full_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[broadcast_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[broadcast_name]"
-                      name="broadcast_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[driver_country_code]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[driver_country_code]"
-                      name="driver_country_code" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[team_name]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[team_name]"
-                      name="team_name" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[lap_number]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[lap_number]"
-                      name="lap_number" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[lap_date_start]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[lap_date_start]"
-                      name="lap_date_start" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[duration_sector_1]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[duration_sector_1]"
-                      name="duration_sector_1" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[duration_sector_2]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[duration_sector_2]"
-                      name="duration_sector_2" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[duration_sector_3]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[duration_sector_3]"
-                      name="duration_sector_3" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[i1_speed]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[i1_speed]"
-                      name="i1_speed" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[i2_speed]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[i2_speed]"
-                      name="i2_speed" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[is_pit_out_lap]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[is_pit_out_lap]"
-                      name="is_pit_out_lap" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[lap_duration]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[lap_duration]"
-                      name="lap_duration" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[segments_sector_1]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[segments_sector_1]"
-                      name="segments_sector_1" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[segments_sector_2]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[segments_sector_2]"
-                      name="segments_sector_2" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[segments_sector_3]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[segments_sector_3]"
-                      name="segments_sector_3" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[st_speed]"
-                      dataType="nText"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[st_speed]"
-                      name="st_speed" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-          <paths>
-            <path
-              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de OLE DB]"
-              endId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano]"
-              name="Salida de origen de OLE DB"
-              startId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
-          </paths>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -5789,14 +4596,6 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
       DTS:To="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{1AD2C419-3C2B-4513-8FD9-32E202959FC0}"
-      DTS:From="Package\CREACION DE TABLAS STAGING COMPILADAS (CARS Y LAPS)"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Restricción 2"
-      DTS:To="Package\Tarea Flujo de datos" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -5890,32 +4689,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Tarea Flujo de datos"
-          TopLeft="246,265" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="334,231">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34"
-              Start="0,0"
-              End="0,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -5923,7 +4696,7 @@
     design-time-name="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="194,42"
           Id="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\IMPORTAR LAPS CSV"
@@ -5983,9 +4756,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6007,9 +4778,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6031,9 +4800,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6055,9 +4822,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6079,9 +4844,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6141,57 +4904,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\SESSIONS STAGING TABLE">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Tarea Flujo de datos">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Tarea Flujo de datos\Origen de OLE DB"
-          TopLeft="229,44" />
-        <NodeLayout
-          Size="200,42"
-          Id="Package\Tarea Flujo de datos\Destino de archivo plano"
-          TopLeft="215,130" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de OLE DB]"
-          TopLeft="314.5,86">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44"
-              Start="0,0"
-              End="0,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Origen de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

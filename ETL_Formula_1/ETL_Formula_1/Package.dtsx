@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="82"
-  DTS:VersionGUID="{86293B60-6DC8-41BC-841D-774EC0CB828A}">
+  DTS:VersionBuild="84"
+  DTS:VersionGUID="{76E587D2-E735-4D3A-B5B1-8D31B0881F01}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\PC\Documents\Matias\data_projects\formula_1\data\raw\laps_by_drivers_sessions_meetings.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\PC\Documents\Matias\data_projects\formula_1\data\raw\laps_by_drivers_sessions_meetings.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\PC\Documents\Matias\data_projects\formula_1\data\raw\laps_by_drivers_sessions_meetings.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\PC\Documents\Matias\data_projects\formula_1\data\raw\laps_by_drivers_sessions_meetings.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1449,53 +1449,43 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[date]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="date" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[session_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="session_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[brake]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="brake" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[n_gear]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="n_gear" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[driver_number]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="driver_number" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[drs]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="drs" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[throttle]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="throttle" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[speed]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="speed" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\CARS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[rpm]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="rpm" />
                   </externalMetadataColumns>
                 </input>
@@ -1686,63 +1676,51 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[session_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="session_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[driver_number]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="driver_number" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[broadcast_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="broadcast_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[full_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="full_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[name_acronym]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="name_acronym" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[team_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="team_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[team_colour]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="team_colour" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[first_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="first_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[last_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="last_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[headshot_url]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="headshot_url" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\DRIVERS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_code]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="country_code" />
                   </externalMetadataColumns>
                 </input>
@@ -3976,83 +3954,67 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[session_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="session_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[driver_number]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="driver_number" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[lap_number]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="lap_number" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[date_start]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="date_start" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[duration_sector_1]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="duration_sector_1" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[duration_sector_2]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="duration_sector_2" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[duration_sector_3]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="duration_sector_3" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[i1_speed]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="i1_speed" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[i2_speed]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="i2_speed" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[is_pit_out_lap]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="is_pit_out_lap" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[lap_duration]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="lap_duration" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[segments_sector_1]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="segments_sector_1" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[segments_sector_2]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="segments_sector_2" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[segments_sector_3]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="segments_sector_3" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\LAPS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[st_speed]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="st_speed" />
                   </externalMetadataColumns>
                 </input>
@@ -4250,68 +4212,55 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[circuit_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="circuit_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[circuit_short_name]"
-                      dataType="wstr"
-                      length="250"
+                      dataType="nText"
                       name="circuit_short_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_code]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="meeting_code" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[location]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="location" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_key]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="country_key" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_code]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="country_code" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_name]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="country_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_name]"
-                      dataType="wstr"
-                      length="250"
+                      dataType="nText"
                       name="meeting_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[meeting_official_name]"
-                      dataType="wstr"
-                      length="250"
+                      dataType="nText"
                       name="meeting_official_name" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[gmt_offset]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="gmt_offset" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[date_start]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="date_start" />
                     <externalMetadataColumn
                       refId="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\MEETINGS STAGING TABLE.Inputs[Entrada de destino de OLE DB].ExternalColumns[year]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="year" />
                   </externalMetadataColumns>
                 </input>
@@ -4747,7 +4696,7 @@
     design-time-name="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="194,42"
           Id="Package\IMPORTACION DE CSV Y ALMACENAMIENTO EN TABLAS STAGING\IMPORTAR LAPS CSV"
@@ -4807,9 +4756,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4831,9 +4778,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4855,9 +4800,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4879,9 +4822,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4903,9 +4844,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
