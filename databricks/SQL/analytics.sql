@@ -19,4 +19,6 @@ WHERE
 SELECT
   *
 FROM
-  formula_1.int_transform_laps_data;
+  formula_1.int_transform_laps_data
+WHERE
+  lap_duration IS NULL;
