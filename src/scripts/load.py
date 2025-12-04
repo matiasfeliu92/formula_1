@@ -24,12 +24,12 @@ class Load:
         if "logs" in __path__:
             csv_logs_dir = self.settings.create_new_dir(["src", "logs", "csv"])
             output_dir_file = self.settings.get_file_path(
-                ["src", "logs", "csv"], f"{__path__}_{__timestamp__}"
+                ["src", "logs", "csv"], f"{__path__}_{__timestamp__.replace(" ", "_")}"
             )
             if not __df__.empty:
                 __df__.to_csv(output_dir_file, encoding="utf-8-sig", index=False)
                 logging.info(
-                    f"Table {__path__}_{__timestamp__} was saved in {csv_logs_dir}"
+                    f"Table {__path__}_{__timestamp__.replace(" ", "_")} was saved in {csv_logs_dir}"
                 )
 
     def load_data_in_DB(self, __df__: pd.DataFrame, __path__, __year__, __month__):
