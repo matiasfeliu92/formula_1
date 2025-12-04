@@ -12,11 +12,25 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 
-class Load():
+
+class Load:
     def __init__(self):
         self.settings = Settings()
         self.manage_db = ManageDB()
+        self.extract = Extract()
         self.engine = None
+
+    def load_csv(self, __df__: pd.DataFrame, __path__, __timestamp__=None):
+        if "logs" in __path__:
+            csv_logs_dir = self.settings.create_new_dir(["src", "logs", "csv"])
+            output_dir_file = self.settings.get_file_path(
+                ["src", "logs", "csv"], f"{__path__}_{__timestamp__}"
+            )
+            if not __df__.empty:
+                __df__.to_csv(output_dir_file, encoding="utf-8-sig", index=False)
+                logging.info(
+                    f"Table {__path__}_{__timestamp__} was saved in {csv_logs_dir}"
+                )
 
     def load_data_in_DB(self, __df__: pd.DataFrame, __path__, __year__, __month__):
         connection = self.manage_db.create_connection()
@@ -52,7 +66,11 @@ class Load():
         if not __df__.empty:
             logging.info(f"EL DATAFRAME POSEE {__df__.shape[0]} FILAS")
             schema = "raw"
-            table_name = f"{__path__}_{__year__}_{__month__}" if int(__month__)>=10 else f"{__path__}_{__year__}_0{__month__}"
+            table_name = (
+                f"{__path__}_{__year__}_{__month__}"
+                if int(__month__) >= 10
+                else f"{__path__}_{__year__}_0{__month__}"
+            )
             with self.engine.connect() as conn:
                 logging.info(
                     f"-----------------CONECTADO CORRECTAMENTE A {self.engine.url}-----------------"
