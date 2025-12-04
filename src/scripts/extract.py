@@ -1,6 +1,4 @@
-from datetime import datetime
 import logging
-import os
 import time
 import requests
 import pandas as pd
@@ -12,6 +10,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
+
 
 class Extract:
     def __init__(self):
@@ -59,34 +58,46 @@ class Extract:
             except requests.exceptions.RequestException as e:
                 logging.info("")
                 logging.error(f"Error during request: {e}")
-                self.error_logs.append({
-                    "endpoint": "meetings" if "meetings" in _endpoint_ else "sessions",
-                    "year": self.year,
-                    "url": self.api_url+_endpoint_,
-                    "error": str(e)
-                })
+                self.error_logs.append(
+                    {
+                        "endpoint": (
+                            "meetings" if "meetings" in _endpoint_ else "sessions"
+                        ),
+                        "year": self.year,
+                        "url": self.api_url + _endpoint_,
+                        "error": str(e),
+                    }
+                )
                 logging.info("")
                 return pd.DataFrame()
             except requests.exceptions.HTTPError as e:
                 logging.info("")
                 logging.error(f"HTTP error occurred: {e}")
-                self.error_logs.append({
-                    "endpoint": "meetings" if "meetings" in _endpoint_ else "sessions",
-                    "year": self.year,
-                    "url": self.api_url+_endpoint_,
-                    "error": str(e)
-                })
+                self.error_logs.append(
+                    {
+                        "endpoint": (
+                            "meetings" if "meetings" in _endpoint_ else "sessions"
+                        ),
+                        "year": self.year,
+                        "url": self.api_url + _endpoint_,
+                        "error": str(e),
+                    }
+                )
                 logging.info("")
                 return pd.DataFrame()
             except Exception as e:
                 logging.info("")
                 logging.error(f"An unexpected error occurred: {e}")
-                self.error_logs.append({
-                    "endpoint": "meetings" if "meetings" in _endpoint_ else "sessions",
-                    "year": self.year,
-                    "url": self.api_url+_endpoint_,
-                    "error": str(e)
-                })
+                self.error_logs.append(
+                    {
+                        "endpoint": (
+                            "meetings" if "meetings" in _endpoint_ else "sessions"
+                        ),
+                        "year": self.year,
+                        "url": self.api_url + _endpoint_,
+                        "error": str(e),
+                    }
+                )
                 logging.info("")
                 return pd.DataFrame()
             return df_data
@@ -112,34 +123,43 @@ class Extract:
                 except requests.exceptions.RequestException as e:
                     logging.info("")
                     logging.error(f"Error during request: {e}")
-                    self.error_logs.append({
-                        "endpoint": "laps",
-                        "year": self.year,
-                        "url": self.api_url+_endpoint_.format(session_key, driver_number),
-                        "error": str(e)
-                    })
+                    self.error_logs.append(
+                        {
+                            "endpoint": "laps",
+                            "year": self.year,
+                            "url": self.api_url
+                            + _endpoint_.format(session_key, driver_number),
+                            "error": str(e),
+                        }
+                    )
                     logging.info("")
                     continue
                 except requests.exceptions.HTTPError as e:
                     logging.info("")
                     logging.error(f"HTTP error occurred: {e}")
-                    self.error_logs.append({
-                        "endpoint": "laps",
-                        "year": self.year,
-                        "url": self.api_url+_endpoint_.format(session_key, driver_number),
-                        "error": str(e)
-                    })
+                    self.error_logs.append(
+                        {
+                            "endpoint": "laps",
+                            "year": self.year,
+                            "url": self.api_url
+                            + _endpoint_.format(session_key, driver_number),
+                            "error": str(e),
+                        }
+                    )
                     logging.info("")
                     continue
                 except Exception as e:
                     logging.info("")
                     logging.error(f"An unexpected error occurred: {e}")
-                    self.error_logs.append({
-                        "endpoint": "laps",
-                        "year": self.year,
-                        "url": self.api_url+_endpoint_.format(session_key, driver_number),
-                        "error": str(e)
-                    })
+                    self.error_logs.append(
+                        {
+                            "endpoint": "laps",
+                            "year": self.year,
+                            "url": self.api_url
+                            + _endpoint_.format(session_key, driver_number),
+                            "error": str(e),
+                        }
+                    )
                     logging.info("")
                     continue
             return df_data
@@ -154,40 +174,48 @@ class Extract:
                     f"-------------complete url: {self.api_url+_endpoint_.format(session_key)}-------------"
                 )
                 try:
-                    drivers_data = self._request_with_retries(self.api_url + _endpoint_.format(session_key))
+                    drivers_data = self._request_with_retries(
+                        self.api_url + _endpoint_.format(session_key)
+                    )
                     df = pd.json_normalize(drivers_data)
                     df_data = pd.concat([df_data, df], ignore_index=True)
                 except requests.exceptions.RequestException as e:
                     logging.info("")
                     logging.error(f"Error during request: {e}")
-                    self.error_logs.append({
-                        "endpoint": "drivers",
-                        "year": self.year,
-                        "url": self.api_url + _endpoint_.format(session_key),
-                        "error": str(e)
-                    })
+                    self.error_logs.append(
+                        {
+                            "endpoint": "drivers",
+                            "year": self.year,
+                            "url": self.api_url + _endpoint_.format(session_key),
+                            "error": str(e),
+                        }
+                    )
                     logging.info("")
                     continue
                 except requests.exceptions.HTTPError as e:
                     logging.info("")
                     logging.error(f"HTTP error occurred: {e}")
-                    self.error_logs.append({
-                        "endpoint": "drivers",
-                        "year": self.year,
-                        "url": self.api_url + _endpoint_.format(session_key),
-                        "error": str(e)
-                    })
+                    self.error_logs.append(
+                        {
+                            "endpoint": "drivers",
+                            "year": self.year,
+                            "url": self.api_url + _endpoint_.format(session_key),
+                            "error": str(e),
+                        }
+                    )
                     logging.info("")
                     continue
                 except Exception as e:
                     logging.info("")
                     logging.error(f"An unexpected error occurred: {e}")
-                    self.error_logs.append({
-                        "endpoint": "drivers",
-                        "year": self.year,
-                        "url": self.api_url + _endpoint_.format(session_key),
-                        "error": str(e)
-                    })
+                    self.error_logs.append(
+                        {
+                            "endpoint": "drivers",
+                            "year": self.year,
+                            "url": self.api_url + _endpoint_.format(session_key),
+                            "error": str(e),
+                        }
+                    )
                     logging.info("")
                     continue
             return df_data
@@ -208,38 +236,48 @@ class Extract:
                 except requests.exceptions.RequestException as e:
                     logging.info("")
                     logging.error(f"Error during request: {e}")
-                    self.error_logs.append({
-                        "endpoint": "cars_data",
-                        "year": self.year,
-                        "url": self.api_url+_endpoint_.format(driver_number, session_key),
-                        "error": str(e)
-                    })
+                    self.error_logs.append(
+                        {
+                            "endpoint": "cars_data",
+                            "year": self.year,
+                            "url": self.api_url
+                            + _endpoint_.format(driver_number, session_key),
+                            "error": str(e),
+                        }
+                    )
                     logging.info("")
                     continue
                 except requests.exceptions.HTTPError as e:
                     logging.info("")
                     logging.error(f"HTTP error occurred: {e}")
-                    self.error_logs.append({
-                        "endpoint": "cars_data",
-                        "year": self.year,
-                        "url": self.api_url+_endpoint_.format(driver_number, session_key),
-                        "error": str(e)
-                    })
+                    self.error_logs.append(
+                        {
+                            "endpoint": "cars_data",
+                            "year": self.year,
+                            "url": self.api_url
+                            + _endpoint_.format(driver_number, session_key),
+                            "error": str(e),
+                        }
+                    )
                     logging.info("")
                     continue
                 except Exception as e:
                     logging.info("")
                     logging.error(f"An unexpected error occurred: {e}")
-                    self.error_logs.append({
-                        "endpoint": "cars_data",
-                        "year": self.year,
-                        "url": self.api_url+_endpoint_.format(driver_number, session_key),
-                        "error": str(e)
-                    })
+                    self.error_logs.append(
+                        {
+                            "endpoint": "cars_data",
+                            "year": self.year,
+                            "url": self.api_url
+                            + _endpoint_.format(driver_number, session_key),
+                            "error": str(e),
+                        }
+                    )
                     logging.info("")
                     continue
-            return df_data        
-        # df_error_logs = pd.DataFrame(self.error_logs)
-        # self.settings.create_new_dir(["src", "logs", "csv"])
-        # output_dir_file = self.settings.get_file_path(["src", "logs", "csv"], f'error_log_{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
-        # df_error_logs.to_csv(output_dir_file, encoding='utf-8-sig', index=False)
+            return df_data
+
+    def create_error_log_table(self):
+        df_error_logs = pd.DataFrame(self.error_logs)
+        logging.info(f"-----ERROR LOG has {df_error_logs.shape[0]} filas-----")
+        return df_error_logs
