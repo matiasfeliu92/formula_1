@@ -1,6 +1,5 @@
 import os
 import logging
-import pyodbc
 from sqlalchemy import create_engine, exc
 from dotenv import load_dotenv
 
@@ -22,26 +21,45 @@ class Settings:
     CARS_ENDPOINT = "/car_data?driver_number={}&session_key={}&speed>=290"
     LAPS_ENDPOINT = "/laps?session_key={}&driver_number={}"
     BASE_DIR = os.getcwd()
-    SQL_SERVER_USER = os.getenv("SQL_SERVER_USER")
-    SQL_SERVER_PASS = os.getenv("SQL_SERVER_PASS")
-    SQL_SERVER_HOST = os.getenv("SQL_SERVER_HOST")
-    SQL_SERVER_DB = os.getenv("SQL_SERVER_DB")
-    SQL_SERVER_DB_USE = os.getenv("SQL_SERVER_DB_USE")
-    SQL_SERVER_CONNECTION_STRING = (
-        f"mssql+pyodbc://{SQL_SERVER_USER}:{SQL_SERVER_PASS}@{SQL_SERVER_HOST}/{SQL_SERVER_DB}?"
-        "driver=ODBC+Driver+17+for+SQL+Server"
+    # SQL_SERVER_USER = os.getenv("SQL_SERVER_USER")
+    # SQL_SERVER_PASS = os.getenv("SQL_SERVER_PASS")
+    # SQL_SERVER_HOST = os.getenv("SQL_SERVER_HOST")
+    # SQL_SERVER_DB = os.getenv("SQL_SERVER_DB")
+    # SQL_SERVER_DB_USE = os.getenv("SQL_SERVER_DB_USE")
+    # SQL_SERVER_DB_USE = os.getenv("SQL_SERVER_DB_USE")
+    POSTGRES_DB_USER = os.getenv("DB_USER")
+    POSTGRES_DB_PASS = os.getenv("DB_PASS")
+    POSTGRES_DB_HOST = os.getenv("DB_HOST")
+    POSTGRES_DB_NAME = os.getenv("DB_NAME")
+    POSTGRES_DB_NAME_USE = os.getenv("DB_NAME_USE")
+    # SQL_SERVER_CONNECTION_STRING = (
+    #     f"mssql+pyodbc://{SQL_SERVER_USER}:{SQL_SERVER_PASS}@{SQL_SERVER_HOST}/{SQL_SERVER_DB}?"
+    #     "driver=ODBC+Driver+17+for+SQL+Server"
+    # )
+    POSTGRES_CONNECTION_STRING = (
+        f"postgresql+psycopg2://{POSTGRES_DB_USER}:{POSTGRES_DB_PASS}"
+        f"@{POSTGRES_DB_HOST}:5432/{POSTGRES_DB_NAME_USE}"
     )
-    SQL_SERVER_CURSOR_CONNECTION_STRING = (
-        "DRIVER={{ODBC Driver 17 for SQL Server}};"
-        "SERVER={server};"
-        "DATABASE={db};"
-        "UID={user};"
-        "PWD={pwd};"
+    # SQL_SERVER_CURSOR_CONNECTION_STRING = (
+    #     "DRIVER={{ODBC Driver 17 for SQL Server}};"
+    #     "SERVER={server};"
+    #     "DATABASE={db};"
+    #     "UID={user};"
+    #     "PWD={pwd};"
+    # ).format(
+    #     server=SQL_SERVER_HOST,
+    #     db=SQL_SERVER_DB,
+    #     user=SQL_SERVER_USER,
+    #     pwd=SQL_SERVER_PASS,
+    # )
+    POSTGRES_CURSOR_CONNECTION_STRING = (
+        "dbname={db} user={user} password={pwd} host={host} port={port}"
     ).format(
-        server=SQL_SERVER_HOST,
-        db=SQL_SERVER_DB,
-        user=SQL_SERVER_USER,
-        pwd=SQL_SERVER_PASS,
+        db=POSTGRES_DB_NAME_USE,
+        user=POSTGRES_DB_USER,
+        pwd=POSTGRES_DB_PASS,
+        host=POSTGRES_DB_HOST,
+        port=5432,
     )
 
     def create_new_dir(self, path: list[str]):
