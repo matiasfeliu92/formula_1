@@ -1,7 +1,5 @@
 from datetime import datetime, timedelta
 import logging
-import os
-import sys
 import pandas as pd
 from airflow.models.dag import DAG
 from airflow.operators.python import PythonOperator
@@ -42,15 +40,6 @@ class ELT:
         self.drivers = pd.DataFrame()
         self.cars_data = pd.DataFrame()
         self.laps = pd.DataFrame()
-        self.default_args = {
-            'owner': 'airflow',
-            'depends_on_past': False,
-            'email': ['airflow@example.com'],
-            'email_on_failure': False,
-            'email_on_retry': False,
-            'retries': 1,
-            'retry_delay': timedelta(minutes=5),
-        }
 
     def run(self):
         logging.info(
