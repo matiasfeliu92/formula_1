@@ -1,100 +1,98 @@
-# 🏎️ Formula 1 Data Pipeline: ETL & DBT Analysis
+# 🏎️ Proyecto ELT de Datos de Fórmula 1
 
-Este repositorio contiene un proyecto de Ingeniería de Datos end-to-end centrado en el análisis de telemetría y sesiones de Fórmula 1. Implementa un pipeline de extracción incremental, almacenamiento en base de datos relacional y transformación moderna utilizando **DBT**.
-
-El sistema está diseñado para interactuar con la **OpenF1 API**, optimizando la ingesta de datos y preparando vistas analíticas para su posterior consumo.
+Este proyecto implementa un proceso **ELT (Extraer, Cargar, Transformar)** para la recopilación, almacenamiento y preparación de datos de la Fórmula 1, obtenidos desde la API de OpenF1. El objetivo final es crear un conjunto de datos limpio y estructurado para el análisis de rendimiento de los pilotos.
 
 ---
 
-## 📋 Tabla de Contenidos
+## 💡 ¿Qué Problema Resuelve?
 
-1. [Descripción del Proyecto](#descripción-del-proyecto)
-2. [Stack Tecnológico](#stack-tecnológico)
-3. [Arquitectura y Flujo de Datos](#arquitectura-y-flujo-de-datos)
-    - [1. Extracción de Datos (Incremental)](#1-extracción-de-datos-incremental)
-    - [2. Carga de Datos (Raw)](#2-carga-de-datos-raw)
-    - [3. Transformación (DBT)](#3-transformación-dbt)
-4. [Estructura del Proyecto](#estructura-del-proyecto)
-5. [Instalación y Ejecución](#instalación-y-ejecución)
+El proyecto resuelve la necesidad de obtener, almacenar y preparar **datos históricos y recientes de la Fórmula 1** de una manera automatizada y estructurada.
+
+* **Extracción y Carga (EL):** Permite descargar datos brutos de la API de OpenF1 (`https://api.openf1.org/v1`) para varios *endpoints* clave (sesiones, reuniones, pilotos, datos de coche y vueltas). Los datos se cargan y persisten de forma inmediata en una base de datos PostgreSQL, organizados por periodo (año y mes) para facilitar la trazabilidad y el procesamiento por lotes.
+* **Transformación (T):** Estos datos crudos son luego transformados utilizando **dbt (data build tool)** con modelos basados en SQL, para crear tablas analíticas que faciliten el desarrollo de *dashboards* y el análisis del rendimiento de los pilotos durante las carreras.
+
+En resumen, transforma datos dispersos de una API en una **fuente única de verdad** lista para el análisis de negocio o deportivo.
 
 ---
 
-## 📖 Descripción del Proyecto
+## 🛠️ Stack Técnico Usado
 
-El proyecto automatiza el ciclo de vida de los datos de la Fórmula 1, desde su origen en APIs públicas hasta su modelado para análisis. El foco principal es la eficiencia en la carga de datos (evitando descargas redundantes) y la estructuración modular de las transformaciones mediante DBT.
-
-Los datos abarcan desde la temporada 2023 en adelante e incluyen detalles granulares como tiempos de vuelta, información de pilotos y telemetría del coche en tiempo real.
-
----
-
-## 🛠 Stack Tecnológico
-
-* **Lenguaje Principal:** Python 3.x
-* **Librerías Python:**
-    * `requests`: Manejo de peticiones HTTP a la API.
-    * `pandas`: Manipulación de datos en memoria.
-    * `sqlalchemy` & `psycopg2`: Conexión y ORM para base de datos.
-* **Base de Datos:** PostgreSQL.
-* **Transformación:** DBT (Data Build Tool).
-* **Plataforma:** Databricks / Entorno Local.
-* **Fuente de Datos:** [OpenF1 API](https://openf1.org/).
+| Categoría | Tecnología | Uso Principal |
+| :--- | :--- | :--- |
+| **Lenguaje** | **Python** | Lógica de Extracción y Carga (EL). |
+| **Librerías Python** | **Pandas** | Manipulación y preparación de datos en memoria. |
+| **Librerías Python** | **SQLAlchemy, Psycopg2** | Conexión y operaciones con la base de datos PostgreSQL. |
+| **Librerías Python** | **Python-dotenv** | Gestión de variables de entorno. |
+| **Base de Datos** | **PostgreSQL** | Almacenamiento de datos crudos (esquema `raw`) y transformados. |
+| **Orquestación** | **Apache Airflow** | Programación y monitoreo del flujo de trabajo (DAG). |
+| **Contenerización** | **Docker** | Empaquetado y despliegue de la aplicación y Airflow. |
+| **Transformación** | **dbt (data build tool)** | Desarrollo de modelos de transformación SQL (no detallado en la ejecución, pero parte del proceso ELT completo). |
 
 ---
 
-## 🏗 Arquitectura y Flujo de Datos
+## 🚀 Instrucciones para Correrlo Localmente
 
-El pipeline sigue una estrategia **ELT (Extract, Load, Transform)** dividida en tres etapas críticas:
+Existen dos métodos principales para ejecutar el proceso: utilizando **Airflow** (para producción/programación) o de forma **manual** (para desarrollo/pruebas).
 
-### 1. Extracción de Datos (Incremental)
-Se obtienen datos de los siguientes endpoints de la API:
-* `GET /sessions`
-* `GET /meetings`
-* `GET /drivers`
-* `GET /laps`
-* `GET /car_data`
+### Opción 1: Ejecución con Apache Airflow (Recomendado)
 
-**Lógica Incremental:**
-Para optimizar tiempos y recursos, el proceso no descarga el histórico completo en cada ejecución.
-1.  El script consulta la base de datos para encontrar el último `session_key` y `meeting_key` registrado.
-2.  Parametriza las llamadas a la API para solicitar únicamente los registros con identificadores **mayores** a los almacenados.
-3.  Resultados: Solo se procesan los datos nuevos generados desde la última ejecución.
+Esta opción utiliza Docker para configurar un entorno de Airflow, que se encargará de orquestar la ejecución del script EL.
 
-### 2. Carga de Datos (Raw)
-Los datos extraídos se almacenan en **PostgreSQL** en su formato original ("Raw Data").
-* Cada endpoint de la API tiene su propia tabla correspondiente.
-* No se aplican limpiezas en esta etapa para garantizar la integridad del dato crudo y permitir reprocesamientos futuros si la lógica de negocio cambia.
+1.  **Clonar el Repositorio:**
+    ```bash
+    git clone https://github.com/matiasfeliu92/formula_1.git
+    cd formula_1
+    ```
 
-### 3. Transformación (DBT)
-Utilizando **DBT**, los datos crudos se transforman en información valiosa a través de un linaje de datos claro:
+2.  **Inicializar Airflow:**
+    Ejecuta el siguiente comando para preparar el entorno de Airflow, inicializar la base de datos y crear el usuario administrador.
+    ```bash
+    docker compose up --build airflow-init
+    ```
 
-#### Etapa A: Unificación (Staging/Views)
-Creación de vistas unificadas mediante `JOINs` para desnormalizar la data. En esta etapa **no se limpia la data**, solo se consolida.
+3.  **Iniciar los Servicios:**
+    Inicia Airflow y el resto de los servicios (incluyendo PostgreSQL) en modo *detached* (segundo plano).
+    ```bash
+    docker compose up --build -d
+    ```
 
-* **Vista `stg_laps_unified`:**
-    * Une: `sessions` + `meetings` + `drivers` + `laps`.
-    * Permite analizar tiempos de vuelta con contexto del piloto y la pista.
-* **Vista `stg_telemetry_unified`:**
-    * Une: `sessions` + `meetings` + `drivers` + `car_data`.
-    * Consolida la telemetría técnica con los datos de la sesión.
+4.  **Acceder a la Interfaz de Airflow:**
+    Abre tu navegador y navega a la siguiente URL:
+    * **URL:** `http://localhost:8085`
+    * **Usuario:** `admin`
+    * **Contraseña:** `admin`
 
-#### Etapa B: Limpieza y Enriquecimiento (Intermediate)
-Se aplican reglas de negocio sobre las vistas de staging.
-* **Relleno de Datos (Imputation):** Se toma la vista unificada de `Laps` y se procesan los valores nulos o faltantes para asegurar la calidad del dato antes de su uso en reportes o dashboards.
+5.  **Ejecutar el DAG:**
+    Una vez en la interfaz de Airflow, busca el DAG del proyecto. Para ejecutarlo:
+    * Activa el DAG (si no lo está).
+    * Haz clic en el botón de "Play" para iniciar una ejecución manual.
+    * El DAG está configurado para recibir dos **parámetros de configuración**: el **Año** y el **Mes** (numérico, e.g., `5` para Mayo) que deseas procesar.
 
----
+### Opción 2: Ejecución Manual en Entorno Local
 
-## 📂 Estructura del Proyecto
+Esta opción es ideal para un desarrollo rápido o pruebas puntuales sin la necesidad de la orquestación de Airflow.
 
-```bash
-formula_1/
-├── dbt_project/              # Directorio principal de DBT
-│   ├── models/
-│   │   ├── staging/          # Modelos de vistas unificadas (Joins)
-│   │   └── intermediate/     # Modelos de limpieza y transformación
-│   └── dbt_project.yml
-├── src/                      # Código fuente Python
-│   ├── extraction.py         # Script de carga incremental
-│   ├── db_connection.py      # Configuración de SQLAlchemy/Postgres
-│   └── load.py               # Ingesta a SQL
-├── requirements.txt          # Dependencias del proyecto
-└── README.md                 # Documentación
+1.  **Configurar la Base de Datos:**
+    Asegúrate de tener una instancia de **PostgreSQL** corriendo y accesible, y configura las credenciales de conexión en un archivo `.env` o similar.
+
+2.  **Crear y Activar un Entorno Virtual (Recomendado):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate # En Linux/macOS
+    # o .\venv\Scripts\activate # En Windows
+    ```
+
+3.  **Instalar Dependencias:**
+    Instala todas las librerías necesarias especificadas en tu `requirements.txt`.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Ejecutar el Script Principal:**
+    Ejecuta el script `main.py`, pasándole el **Año** y el **Mes** como argumentos de línea de comandos.
+
+    **Ejemplo (Extracción de datos de Mayo de 2025):**
+    ```bash
+    python main.py 2025 5
+    ```
+    * Los datos extraídos se almacenarán en la base de datos `Formula1` (esquema `raw`), en tablas con el formato `endpoint_AAAA_MM` (e.g., `sessions_2025_05`).
