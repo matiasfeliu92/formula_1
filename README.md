@@ -15,6 +15,22 @@ En resumen, transforma datos dispersos de una API en una **fuente única de verd
 
 ---
 
+## 🔗 Endpoints de la API de OpenF1 Utilizados
+
+La extracción de datos se realiza utilizando la API base `https://api.openf1.org/v1`. Cada *endpoint* recibe parámetros de fecha (calculados a partir del Año y Mes de ejecución) o claves específicas de sesión/piloto.
+
+| Endpoint | Uso | Parámetros Clave |
+| :--- | :--- | :--- |
+| `/sessions` | Obtiene información general de las sesiones de carrera dentro de un periodo. | `date_start`, `date_end` |
+| `/meetings` | Obtiene información de las reuniones (eventos/grandes premios) dentro de un periodo. | `date_start`, `date_start`, `year` |
+| `/drivers` | Obtiene los detalles de los pilotos que participaron en una sesión específica. | `session_key` |
+| `/car_data` | Obtiene datos de telemetría del coche (ej. velocidad) para un piloto/sesión. | `driver_number`, `session_key`, `speed` |
+| `/laps` | Obtiene datos de las vueltas completadas por un piloto en una sesión. | `session_key`, `driver_number` |
+
+> **Nota sobre la persistencia:** Los datos extraídos de cada *endpoint* se almacenan en el esquema `raw` de la base de datos PostgreSQL en tablas nombradas según el formato: `[endpoint_nombre]_[AAAA]_[MM]`. Por ejemplo: `sessions_2025_05`.
+
+---
+
 ## 🛠️ Stack Técnico Usado
 
 | Categoría | Tecnología | Uso Principal |
@@ -95,4 +111,3 @@ Esta opción es ideal para un desarrollo rápido o pruebas puntuales sin la nece
     ```bash
     python main.py 2025 5
     ```
-    * Los datos extraídos se almacenarán en la base de datos `Formula1` (esquema `raw`), en tablas con el formato `endpoint_AAAA_MM` (e.g., `sessions_2025_05`).
