@@ -1,3 +1,4 @@
+import logging
 from sqlalchemy import create_engine
 from sqlalchemy.exc import SQLAlchemyError
 import pyodbc
@@ -5,12 +6,19 @@ import psycopg2
 
 from src.config.settings import Settings
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
+
 
 class ManageDB:
-    def __init__(self):
+    def __init__(self, host=None):
+        logging.info(f"------------HOST: {host} IN MANAGE DB------------")
         settings = Settings()
-        self.conn_string = settings.POSTGRES_CONNECTION_STRING
-        self.conn_string_for_cursor = settings.POSTGRES_CURSOR_CONNECTION_STRING
+        self.conn_string = settings.POSTGRES_CONNECTION_STRING if host == "localhost" else settings.POSTGRES_CONNECTION_STRING_DOCKER
+        self.conn_string_for_cursor = settings.POSTGRES_CURSOR_CONNECTION_STRING if host == "localhost" else settings.POSTGRES_CURSOR_CONNECTION_STRING_DOCKER
         self.engine = None
 
     def create_engine(self):
