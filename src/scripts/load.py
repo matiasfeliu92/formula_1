@@ -14,9 +14,10 @@ logging.basicConfig(
 
 
 class Load:
-    def __init__(self):
+    def __init__(self, host=None):
+        logging.info(f"------------HOST: {host} IN LOAD------------")
         self.settings = Settings()
-        self.manage_db = ManageDB()
+        self.manage_db = ManageDB("localhost") if host==None else ManageDB("docker")
         self.extract = Extract()
         self.engine = None
 
@@ -39,6 +40,7 @@ class Load:
             connection.autocommit = True
             cursor = connection.cursor()
             cursor.execute("CREATE SCHEMA IF NOT EXISTS raw")
+            connection.commit()
             self.engine = self.manage_db.create_engine()
             if not __df__.empty:
                 logging.info(f"EL DATAFRAME POSEE {__df__.shape[0]} FILAS")
@@ -48,6 +50,7 @@ class Load:
                     if int(__month__) >= 10
                     else f"{__path__}_{__year__}_0{__month__}"
                 )
+                __df__ = __df__.astype(str)
                 with self.engine.connect() as conn:
                     logging.info(
                         f"-----------------CONECTADO CORRECTAMENTE A {self.engine.url}-----------------"
@@ -99,6 +102,7 @@ class Load:
                     if int(__month__) >= 10
                     else f"{__path__}_{__year__}_0{__month__}"
                 )
+                __df__ = __df__.astype(str)
                 with self.engine.connect() as conn:
                     logging.info(
                         f"-----------------CONECTADO CORRECTAMENTE A {self.engine.url}-----------------"
