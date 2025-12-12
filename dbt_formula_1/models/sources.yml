@@ -1,0 +1,12 @@
+version: 1
+
+sources:
+  - name: raw
+    database: Formula1
+    schema: raw
+    tables:
+      - name: all_meetings
+      - name: all_sessions
+      - name: all_drivers
+      - name: all_laps
+      - name: all_cars
