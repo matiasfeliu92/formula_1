@@ -1,0 +1,114 @@
+CREATE OR REPLACE VIEW raw.all_sessions AS
+SELECT * FROM "raw".sessions_2025_02
+UNION ALL
+SELECT * FROM "raw".sessions_2025_03
+UNION ALL
+SELECT * FROM "raw".sessions_2025_04
+UNION ALL
+SELECT * FROM "raw".sessions_2025_05
+UNION ALL
+SELECT * FROM "raw".sessions_2025_06
+UNION ALL
+SELECT * FROM "raw".sessions_2025_07
+UNION ALL
+SELECT * FROM "raw".sessions_2025_08
+UNION ALL
+SELECT * FROM "raw".sessions_2025_09
+UNION ALL
+SELECT * FROM "raw".sessions_2025_10
+UNION ALL
+SELECT * FROM "raw".sessions_2025_11
+UNION ALL
+SELECT * FROM "raw".sessions_2025_12;
+
+CREATE OR REPLACE VIEW raw.all_meetings AS
+SELECT * FROM "raw".meetings_2025_02
+UNION ALL
+SELECT * FROM "raw".meetings_2025_03
+UNION ALL
+SELECT * FROM "raw".meetings_2025_04
+UNION ALL
+SELECT * FROM "raw".meetings_2025_05
+UNION ALL
+SELECT * FROM "raw".meetings_2025_06
+UNION ALL
+SELECT * FROM "raw".meetings_2025_07
+UNION ALL
+SELECT * FROM "raw".meetings_2025_08
+UNION ALL
+SELECT * FROM "raw".meetings_2025_09
+UNION ALL
+SELECT * FROM "raw".meetings_2025_10
+UNION ALL
+SELECT * FROM "raw".meetings_2025_11
+UNION ALL
+SELECT * FROM "raw".meetings_2025_12;
+
+CREATE OR REPLACE VIEW raw.all_drivers AS
+SELECT * FROM "raw".drivers_2025_02
+UNION ALL
+SELECT * FROM "raw".drivers_2025_03
+UNION ALL
+SELECT * FROM "raw".drivers_2025_04
+UNION ALL
+SELECT * FROM "raw".drivers_2025_05
+UNION ALL
+SELECT * FROM "raw".drivers_2025_06
+UNION ALL
+SELECT * FROM "raw".drivers_2025_07
+UNION ALL
+SELECT * FROM "raw".drivers_2025_08
+UNION ALL
+SELECT * FROM "raw".drivers_2025_09
+UNION ALL
+SELECT * FROM "raw".drivers_2025_10
+UNION ALL
+SELECT * FROM "raw".drivers_2025_11
+UNION ALL
+SELECT * FROM "raw".drivers_2025_12;
+
+CREATE OR REPLACE VIEW raw.all_cars AS
+SELECT * FROM "raw".cars_data_2025_02
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_03
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_04
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_05
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_06
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_07
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_08
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_09
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_10
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_11
+UNION ALL
+SELECT * FROM "raw".cars_data_2025_12;
+
+CREATE OR REPLACE VIEW raw.all_laps AS
+SELECT * FROM "raw".laps_2025_02
+UNION ALL
+SELECT * FROM "raw".laps_2025_03
+UNION ALL
+SELECT * FROM "raw".laps_2025_04
+UNION ALL
+SELECT * FROM "raw".laps_2025_05
+UNION ALL
+SELECT * FROM "raw".laps_2025_06
+UNION ALL
+SELECT * FROM "raw".laps_2025_07
+UNION ALL
+SELECT * FROM "raw".laps_2025_08
+UNION ALL
+SELECT * FROM "raw".laps_2025_09
+UNION ALL
+SELECT * FROM "raw".laps_2025_10
+UNION ALL
+SELECT * FROM "raw".laps_2025_11
+UNION ALL
+SELECT * FROM "raw".laps_2025_12;
