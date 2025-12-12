@@ -16,6 +16,8 @@ x-airflow-common:
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
     - ./src:/opt/airflow/src
+    - ./dbt_formula_1:/opt/airflow/dbt_formula_1
+    - C:\Users\hp\.dbt:/home/airflow/.dbt
   user: "${AIRFLOW_UID}:0"
   depends_on:
     - postgres
