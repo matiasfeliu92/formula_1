@@ -216,4 +216,10 @@ with DAG(
         python_callable=union_similar_tables
     )
 
-    run_main_elt >> union_tables
+    run_DBT = BashOperator(
+        task_id="transform_with_DBT",
+        bash_command="cd /opt/airflow/dbt_formula_1 && dbt run --profiles-dir /home/airflow/.dbt",
+        dag=dag,
+    )
+
+    run_main_elt >> union_tables >> run_DBT
