@@ -52,11 +52,13 @@ class Load:
                 )
                 __df__ = __df__.astype(str)
                 with self.engine.connect() as conn:
+                    cursor.execute(f"TRUNCATE TABLE {table_name};")
+                    connection.commit()
                     logging.info(
                         f"-----------------CONECTADO CORRECTAMENTE A {self.engine.url}-----------------"
                     )
                     __df__.to_sql(
-                        table_name, conn, schema=schema, if_exists="replace", index=False
+                        table_name, conn, schema=schema, if_exists="append", index=False
                     )
                     logging.info(
                         f"Table {table_name} was saved in {self.settings.POSTGRES_DB_NAME_USE}.{schema}"
